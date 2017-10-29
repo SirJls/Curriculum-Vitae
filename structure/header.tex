@@ -1,0 +1,95 @@
+\documentclass[a4paper,11pt,final]{memoir}                   % Font and paper size
+
+\usepackage[usenames,dvipsnames]{xcolor}                     % Custom colours
+\usepackage[utf8]{inputenc}                                  % Inputting international characters
+\usepackage{XCharter}                                        % Bitstream Charter font
+\usepackage{flowfram}                                        % Multi-column layout
+\usepackage{graphicx}                                        % Figures
+\usepackage{tikz}                                            % Horizontal rule
+\usepackage[top=1cm,left=1cm,right=1cm,bottom=1cm]{geometry} % margins
+\usepackage{multicol}                                        % columns env.
+  \setlength{\multicolsep}{0pt}
+\usepackage{enumitem}                                        % Modifying lists
+  \setlist{noitemsep,nolistsep} % Remove spacing within and around lists
+\usepackage{hyperref}                                        % URLs
+  \hypersetup{
+    colorlinks,
+    linkcolor={RoyalBlue},
+    citecolor={RoyalBlue},
+    urlcolor={RoyalBlue},
+  }
+
+% -- Define length commands ---------------------------------------------------
+
+% \setlength{\vcolumnsep}{\baselineskip}
+% \setlength{\columnsep}{\vcolumnsep}
+
+% -- Left Frame ---------------------------------------------------------------
+
+\newflowframe{0.25\textwidth}{\textheight}{0pt}{0pt}
+\newlength{\LeftMainSep}
+\setlength{\LeftMainSep}{0.25\textwidth}
+\addtolength{\LeftMainSep}{1\columnsep}
+
+\newstaticframe{1.5pt}{\textheight}{\LeftMainSep}{0pt}
+
+% Content of the static frame with the vertical line
+\begin{staticcontents}{1}
+\hfill
+\tikz{\draw[loosely dotted,color=RoyalBlue,line width=2.pt,yshift=0](0,0) -- (0,\textheight);}
+\hfill\mbox{}
+\end{staticcontents}
+
+% -- Right Frame --------------------------------------------------------------
+
+\addtolength{\LeftMainSep}{1.5pt}
+\addtolength{\LeftMainSep}{1\columnsep}
+\newflowframe{0.7\textwidth}{\textheight}{\LeftMainSep}{0pt}
+
+% -- Misc ----------------------------------------------------------------
+
+% Disable all page numbering
+\pagestyle{empty}
+
+% Stop paragraph indentation
+\setlength{\parindent}{0pt}
+
+% -- New Commands -------------------------------------------------------------
+
+% CV user information goes into the left column.
+% Parameter 1: ...
+\newcommand{\userinformation}[1]{\renewcommand{\userinformation}{#1}}
+
+% CV heading.
+% Parameter 1: Author name.
+\newcommand{\cvheading}[1]{{\Huge\bfseries\color{RoyalBlue} #1} \par\vspace{.6\baselineskip}}
+
+% CV subheading.
+% Parameter 1: Author occupation.
+\newcommand{\cvsubheading}[1]{{\Large\bfseries #1} \bigskip}
+
+% Separator to use between headings.
+% Parameter 1: None
+\newcommand{\Sep}{\vspace{1em}}
+
+% Separator to use within headings.
+% Parameter 1: None.
+\newcommand{\SmallSep}{\vspace{0.5em}}
+
+% About me section.
+% Parameter 1: Section name.
+% Parameter 2: Context.
+\newcommand{\aboutme}[2]{\textbf{\color{RoyalBlue}#1}\par#2\par\Sep}
+
+% Headings within sections.
+% Parameter 1: Section name.
+\newcommand{\CVSection}[1]{{\Large\textbf{#1}}\par\SmallSep}
+
+% CVItem to use within sections.
+% Parameter 1: Item title/name.
+% Parameter 2: Context.
+\newcommand{\CVItem}[2]{\textbf{\color{RoyalBlue} #1}\par\newline #2\SmallSep}
+
+% Blue bullet.
+% Parameter 1: None.
+\newcommand{\bluebullet}{\textcolor{RoyalBlue}{$\circ$}~~}

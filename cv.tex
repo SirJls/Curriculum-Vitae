@@ -1,0 +1,212 @@
+% -- Include layout & packages ------------------------------------------------
+
+\input{./structure/header.tex}
+
+% -- Some helper commands -----------------------------------------------------
+
+\newcommand{\authorname}{Sjors Sparreboom}
+\newcommand{\authoremail}{mail@sjorssparreboom.nl}
+\newcommand{\authorwebsite}{http://sjorssparreboom.nl}
+\newcommand{\authorbirthday}{17 November 1990}
+\newcommand{\authormobilephone}{(+31) 641 77 44 22}
+\newcommand{\authorgpgkey}{0x36BEBC5B}
+\newcommand{\authorfingerprint}{EEC1 9F10 7DD3 801B D3ED  4231 9088 4F4B 36BE BC5B}
+\newcommand{\authorgithub}{\href{http://github.com/SirJls}{http://github.com/SirJls}}
+
+\newcommand{\ico}[2]{\includegraphics[width=#1\columnwidth]{./ico/#2}}
+\newcommand{\icon}[1]{\includegraphics[width=0.1\columnwidth]{./ico/#1}}
+\newcommand{\mailto}[1]{\href{mailto://#1}{#1}}
+\newcommand{\visit}[1]{\href{#1}{#1}}
+\newcommand{\photo}[1]{\includegraphics[width=0.6\columnwidth]{./img/#1}\\[\baselineskip]}
+
+\userinformation{
+  \begin{flushleft}
+    \photo{photo.png}
+    \small
+    \icon{user.png}~\authorname                   \\[.1cm]
+    \icon{cake.png}~\authorbirthday               \\[.1cm]
+    \icon{mail.png}~\mailto{\authoremail}         \\[.1cm]
+    \icon{globe.png}~\visit{\authorwebsite}       \\[.1cm]
+    \icon{mobile.png}~\authormobilephone          \\[.1cm]
+    \SmallSep
+    \hline
+    \SmallSep
+    \icon{gpg.png}~\authorgpgkey                  \\[.1cm]
+    \icon{fingerprint.png}~\authorfingerprint     \\[.1cm]
+    \SmallSep
+    \hline
+    \SmallSep
+    \icon{github.png}~\authorgithub               \\[.1cm]
+    \vfill
+  \end{flushleft}\normalsize
+}
+
+\begin{document}
+
+\userinformation
+
+\framebreak
+
+\normalsize\normalfont
+
+% -- Heading ------------------------------------------------------------------
+
+\cvheading{\authorname}
+
+\cvsubheading{Student / Software Engineer}
+
+% -- About me -----------------------------------------------------------------
+
+\aboutme{About me}{
+  Graduate computer science student with a professional background in system
+  management and cryptography. Having worked on several international
+  peacekeeping missions and trainings covering the roles: Communication
+  Information Specialist and Royal Marine. Obtaining the following attributes:
+
+  \SmallSep
+
+  \textbf{\color{RoyalBlue} Disciplined:}~This was demonstrated in the previous
+  position as Royal Marine by making sure real time communication was possible
+  under any circumstances on any continent.
+
+  \SmallSep
+
+  \textbf{\color{RoyalBlue} Energetic:}~Aiming to use my energetic personality
+  to contribute to a better working environment, believing that a combination
+  of positive energy and a positive mindset make for a better working
+  environment.
+
+  \SmallSep
+
+  \textbf{\color{RoyalBlue} Personal Growth}:~Taking time for personal growth,
+  believing that stagnation means decline. This was demonstrated by going back
+  to school after seven years in a pursuit of knowledge. Also developing a keen
+  interest in mathematics and functional programming in my spare time.
+}
+
+% -- Separator ----------------------------------------------------------------
+
+\Sep
+
+% -- Education ----------------------------------------------------------------
+
+\ico{0.05}{education.png}~\CVSection{Education}
+
+% -- Computer Science  --------------------------------------------------------
+
+\CVItem{2014~-~Current, Rotterdam University of Applied Sciences}
+{Bachelor in Computer Science}
+
+\Smallsep
+
+% -- Communication Information Specialist -------------------------------------
+
+\CVItem{2010~-~2011, Marine Trainings Center}
+{Marine Advanced Signaller / Communication and Information Specialist}
+
+\SmallSep
+
+% -- Royal Marine -------------------------------------------------------------
+
+\CVItem{2009~-~2010, Marine Trainings Center}
+{Marine First Class}
+
+\SmallSep
+
+% -- Separator ----------------------------------------------------------------
+
+\Sep
+
+% -- Experience ---------------------------------------------------------------
+
+\ico{0.05}{work.png}~\CVSection{Experience}
+
+% -- Ivaldi -------------------------------------------------------------------
+
+\CVItem{May 2016 - 2017, \textit{Trainee Software Engineer}, Ivaldi}
+{
+  Trainee Software Engineer, was responsible for maintaining, extending and
+  building back-end solutions for modern web-applications, mostly in Ruby.
+
+  \SmallSep
+
+  \begin{itemize}
+    \item Added e-mail template functionality to BRIMIR a open source ticket
+      manager, introducing the option for automatic replies.
+    \item Added a calendar extension to BRIMIR, which let's you decide when
+      to receive e-mails.
+    \item Added Captcha authentication to BRIMIR, to prevent bots from creating
+      multiple tickets.
+    \item Added regular expression parser for the e-mail templates to BRIMIR,
+      allowing variables inside brackets to be automatically replaced by known
+      content.
+    \item Added read/unread status to tickets.
+    \item Extended e-mail filter.
+    \item Upgraded BRIMIR to Ruby On Rails 5.
+    \item Fixed several bugs in BRIMIR.
+    \item Added multi-language support to the skillpower website.
+  \end{itemize}
+
+}
+
+\SmallSep
+
+% -- Next Page ----------------------------------------------------------------
+
+\clearpage
+\framebreak
+\framebreak
+
+% -- Royal Marine -------------------------------------------------------------
+
+\CVItem{May 2009 - 2014, \textit{Royal Marine}, Royal Netherlands Navy}
+{
+  Participated in international peacekeeping operations. Deployable all over
+  the world in forty-eight hours. To successfully complete these missions
+  skills obtained from mandatory trainings in the most varied circumstances and
+  a physical and mental stability were demanded.
+
+  \SmallSep
+
+  \begin{itemize}
+    \item Trained to operate in any environment, under any condition and
+      circumstances.
+    \item Took part in several anti-piracy operations in the Gulf of Aden and
+      Somalia.
+    \item Took part in different trainings all around the globe.
+    \item Responsible real time commutation with HQ under any circumstances and
+      in any continent.
+    \item Responsible for encrypting and decrypting messages sent over safex,
+      HF, VHF or TCP/IP.
+
+  \end{itemize}
+}
+
+\SmallSep
+
+% -- Software Development Skills ----------------------------------------------
+
+\CVSection{Software Development Skills}
+
+% -- Programming --------------------------------------------------------------
+
+\CVItem{Programming}
+{\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+\bluebullet C\# &  \bluebullet Shell & \bluebullet C\\
+\bluebullet Haskell &  \bluebullet F\# & \bluebullet Ruby\\
+\end{tabular}}
+
+% -- Software --------------------------------------------------------------
+
+\CVItem{Computer Software}
+{\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+ \bluebullet Arch Linux &  \bluebullet Android & \bluebullet ViM\\
+ \bluebullet .NET &  \bluebullet Tmux & \bluebullet XMonad\\
+\end{tabular}}
+
+% -- Separator ----------------------------------------------------------------
+
+\Sep
+
+\end{document}
+
