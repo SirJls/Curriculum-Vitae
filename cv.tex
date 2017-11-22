@@ -21,7 +21,7 @@
 
 \userinformation{
   \begin{flushleft}
-    \photo{photo.png}
+    \photo{me.png}
     \small
     \icon{user.png}~\authorname                   \\[.1cm]
     \icon{cake.png}~\authorbirthday               \\[.1cm]
@@ -97,7 +97,7 @@
 \CVItem{2014~-~Current, Rotterdam University of Applied Sciences}
 {Bachelor in Computer Science}
 
-\Smallsep
+\SmallSep
 
 % -- Communication Information Specialist -------------------------------------
 
@@ -123,39 +123,50 @@
 
 % -- Ivaldi -------------------------------------------------------------------
 
-\CVItem{May 2016 - 2017, \textit{Trainee Software Engineer}, Ivaldi}
+\CVItem{May 2016 - 2017, \textit{Internship Software Engineer}, Ivaldi}
 {
-  Trainee Software Engineer, was responsible for maintaining, extending and
-  building back-end solutions for modern web-applications, mostly in Ruby.
+  Ivaldi is a small company founded by five student after they finished their
+  studies at the Delft University. The company specializes in web based
+  solutions and mobile app development. As a software engineer at Ivaldi, I was responsible for improving BRIMIR a
+  ticket system used internally by Ivaldi to handle their support.
 
   \SmallSep
 
   \begin{itemize}
-    \item Added e-mail template functionality to BRIMIR a open source ticket
-      manager, introducing the option for automatic replies.
-    \item Added a calendar extension to BRIMIR, which let's you decide when
-      to receive e-mails.
-    \item Added Captcha authentication to BRIMIR, to prevent bots from creating
-      multiple tickets.
-    \item Added regular expression parser for the e-mail templates to BRIMIR,
-      allowing variables inside brackets to be automatically replaced by known
-      content.
-    \item Added read/unread status to tickets.
-    \item Extended e-mail filter.
-    \item Upgraded BRIMIR to Ruby On Rails 5.
-    \item Fixed several bugs in BRIMIR.
-    \item Added multi-language support to the skillpower website.
+    \item Successfully implemented the BRIMIR, which allows agents to automate
+      replies.
+    \item Successfully implemented the calendar system to BRIMIR, which allows
+      customers to schedule their working hours.
+    \item Associated the BRIMIR calendar system and the BRIMIR notification
+      system, which successfully allowed agents to control when they want to
+      receive support e-mails.
+    \item Analysed a vulnerability bug that allowed bots to create infinitely
+      many tickets and in response delivered a solution by implementing a
+      CAPTCHA authentication.
+    \item Successfully implemented a regular expression parser for the e-mail
+      template system in BRIMIR to contain variables, which allows agents to
+      create more dynamic templates.
+    \item Accountable for implementing the status checking for tickets in
+      BRIMIR, which resulted in a better user experience.
+  \end{itemize}
+
+    \framebreak
+    \framebreak
+
+  \begin{itemize}
+    \item Successfully extended the BRIMIR e-mail filter with improved pattern
+      recognition capabilities, which resulted in less spam e-mails received by
+      customers.
+    \item Accountable for upgrading BRIMIR to Ruby on Rails 5, which allowed
+      it to support real-time communication.
+    \item Responsible for restructuring the Skillpower database to support more
+      languages, which resulted in more international attention CARE
+      Netherlands.
   \end{itemize}
 
 }
 
 \SmallSep
-
-% -- Next Page ----------------------------------------------------------------
-
-\clearpage
-\framebreak
-\framebreak
 
 % -- Royal Marine -------------------------------------------------------------
 
@@ -184,29 +195,92 @@
 
 \SmallSep
 
-% -- Software Development Skills ----------------------------------------------
+% -- Separator ----------------------------------------------------------------
 
-\CVSection{Software Development Skills}
+\Sep
+
+% -- Software Development -----------------------------------------------------
+
+\ico{0.05}{lambda.png}~\CVSection{Software Development}
 
 % -- Programming --------------------------------------------------------------
 
 \CVItem{Programming}
-{\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
-\bluebullet C\# &  \bluebullet Shell & \bluebullet C\\
-\bluebullet Haskell &  \bluebullet F\# & \bluebullet Ruby\\
-\end{tabular}}
 
-% -- Software --------------------------------------------------------------
+\SmallSep
 
-\CVItem{Computer Software}
 {\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
- \bluebullet Arch Linux &  \bluebullet Android & \bluebullet ViM\\
- \bluebullet .NET &  \bluebullet Tmux & \bluebullet XMonad\\
+  \bluebullet C\# & \bluebullet Shell & \bluebullet C \\
+  \multicolumn{3}{l}{
+    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.65}
+    \hspace{2.7em}
+    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.8}
+    \hspace{2.7em}
+    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.55}
+  } \\
+  \bluebullet Haskell & \bluebullet F\# & \bluebullet Ruby \\
+  \multicolumn{3}{l}{
+    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.7}
+    \hspace{2.7em}
+    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.68}
+    \hspace{2.7em}
+    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.78}
+  }
+\end{tabular}
+}
+
+\SmallSep
+
+% -- Systems  -----------------------------------------------------------------
+
+\CVItem{Systems}
+
+\SmallSep
+
+{\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+  \bluebullet Windows & \bluebullet IOS & \bluebullet UNIX \\
+  \multicolumn{3}{l}{
+    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.7}
+    \hspace{2.7em}
+    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.4}
+    \hspace{2.7em}
+    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.8}
+  }
 \end{tabular}}
 
 % -- Separator ----------------------------------------------------------------
 
 \Sep
 
-\end{document}
+% -- Languages ----------------------------------------------------------------
 
+\ico{0.05}{communication.png}~\CVSection{Communication}
+
+\CVItem{Languages}
+
+\SmallSep
+
+{\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+  \bluebullet English    & Fluent \\
+  \bluebullet Dutch      & Native \\
+  \bluebullet Vietnamese & Basic  \\
+\end{tabular}}
+
+% -- Separator ----------------------------------------------------------------
+
+\Sep
+
+% -- Hobbies -----------------------------------------------------------------
+
+\ico{0.05}{hobbies.png}~\CVSection{Hobbies}
+
+\CVItem{Hobbies}
+
+\SmallSep
+
+{\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
+ \bluebullet Kyokushin Karate & \bluebullet Mathemathics & \bluebullet Reading \\
+ \bluebullet Movies & \bluebullet Running \\
+\end{tabular}}
+
+\end{document}
