@@ -10,7 +10,9 @@
 \newcommand{\authorbirthday}{17 November 1990}
 \newcommand{\authormobilephone}{(+31) 641 77 44 22}
 \newcommand{\authorgpgkey}{0x36BEBC5B}
-\newcommand{\authorfingerprint}{EEC1 9F10 7DD3 801B D3ED  4231 9088 4F4B 36BE BC5B}
+\newcommand{\authorfingerprintone}{EEC1 9F10 7DD3 801B}
+{\newcommand{\authorfingerprinttwo}{D3ED 4231 9088 4F4B 36BE}
+{\newcommand{\authorfingerprintthree}{BC5B}
 \newcommand{\authorgithub}{\href{http://github.com/SirJls}{http://github.com/SirJls}}
 
 \newcommand{\ico}[2]{\includegraphics[width=#1\columnwidth]{./ico/#2}}
@@ -21,22 +23,25 @@
 
 \userinformation{
   \begin{flushleft}
-    \photo{me.png}
+    \photo{me.jpg}
     \small
-    \icon{user.png}~\authorname                   \\[.1cm]
-    \icon{cake.png}~\authorbirthday               \\[.1cm]
-    \icon{mail.png}~\mailto{\authoremail}         \\[.1cm]
-    \icon{globe.png}~\visit{\authorwebsite}       \\[.1cm]
-    \icon{mobile.png}~\authormobilephone          \\[.1cm]
+    \icon{user.png}~\raisebox{.2em}{\authorname}                      \\[.1cm]
+    \icon{cake.png}~\raisebox{.2em}{\authorbirthday}                  \\[.1cm]
+    \icon{mail.png}~\raisebox{.2em}{\mailto{\authoremail}}            \\[.1cm]
+    \icon{globe.png}~\raisebox{.2em}{\mailto{\authorwebsite}}         \\[.1cm]
+    \icon{mobile.png}~\raisebox{.2em}{\authormobilephone}             \\[.1cm]
     \SmallSep
     \hline
     \SmallSep
-    \icon{gpg.png}~\authorgpgkey                  \\[.1cm]
-    \icon{fingerprint.png}~\authorfingerprint     \\[.1cm]
+    \icon{gpg.png}~\raisebox{.2em}{\authorgpgkey}                     \\[.1cm]
+    \icon{fingerprint.png}~\raisebox{.2em}{\authorfingerprintone}     \\[.1cm]
+    \raisebox{.2em}{\authorfingerprinttwo}                            \\[.1cm]
+    \raisebox{.2em}{\authorfingerprintthree}                          \\[.1cm]
+    % \icon{fingerprint.png}~\authorfingerprint                   \\[.1cm]
     \SmallSep
     \hline
     \SmallSep
-    \icon{github.png}~\authorgithub               \\[.1cm]
+    \icon{github.png}~\raisebox{.2em}{\authorgithub}            \\[.1cm]
     \vfill
   \end{flushleft}\normalsize
 }
@@ -53,35 +58,19 @@
 
 \cvheading{\authorname}
 
-\cvsubheading{Student / Software Engineer}
+\cvsubheading{Student / Software Engineer / Former Royal Marine}
 
-% -- About me -----------------------------------------------------------------
+% -- Personel statement -------------------------------------------------------
 
-\aboutme{About me}{
-  Graduate computer science student with a professional background in system
-  management and cryptography. Having worked on several international
-  peacekeeping missions and trainings covering the roles: Communication
-  Information Specialist and Royal Marine. Obtaining the following attributes:
-
-  \SmallSep
-
-  \textbf{\color{RoyalBlue} Disciplined:}~This was demonstrated in the previous
-  position as Royal Marine by making sure real time communication was possible
-  under any circumstances on any continent.
-
-  \SmallSep
-
-  \textbf{\color{RoyalBlue} Energetic:}~Aiming to use my energetic personality
-  to contribute to a better working environment, believing that a combination
-  of positive energy and a positive mindset make for a better working
-  environment.
-
-  \SmallSep
-
-  \textbf{\color{RoyalBlue} Personal Growth}:~Taking time for personal growth,
-  believing that stagnation means decline. This was demonstrated by going back
-  to school after seven years in a pursuit of knowledge. Also developing a keen
-  interest in mathematics and functional programming in my spare time.
+\statement{Personal Statement}{
+  Former Royal Dutch marine, turned computer science student with seven years'
+  experience in the security and communication sector. I have strong technical
+  skills as well as excellent interpersonal skills, proven by military
+  distinctions and credentials. Eager to be challenged in order to grow
+  and improve intellectually. Currently developing a genuine interest in
+  mathematics and functional programming. A firm believer in my own saying:
+  \textit{'stagnation means decline'} and the design principle: \textit{'Keep
+  it simple stupid'}.
 }
 
 % -- Separator ----------------------------------------------------------------
@@ -90,26 +79,63 @@
 
 % -- Education ----------------------------------------------------------------
 
-\ico{0.05}{education.png}~\CVSection{Education}
+\ico{0.05}{education.png}~\CVSection{\raisebox{.2em}{Education}}
 
 % -- Computer Science  --------------------------------------------------------
 
 \CVItem{2014~-~Current, Rotterdam University of Applied Sciences}
-{Bachelor in Computer Science}
+{BSc in Computer Science}
+\footnotesize\textit{\\
+  Relevant subjects include: Functional programming, Algorithms \& Complexity,
+  Data Science, Software Engineering, Object Oriented programming, Databases,
+  Visualization and Analysis.
+}
+
+\normalsize\normalfont
 
 \SmallSep
 
 % -- Communication Information Specialist -------------------------------------
 
-\CVItem{2010~-~2011, Marine Trainings Center}
-{Marine Advanced Signaller / Communication and Information Specialist}
+\CVItem{2010~-~2011, Royal Marine Training Center}
+{Marine Advanced Signaller / Communication Information Specialist}
+\footnotesize\textit{\\
+  Received the CIS emblem, for successfully completing the advanced signallers
+  course, which consists of courses about: Advanced communication devices,
+  cryptography, basic electronics, computer systems, military radio
+  transmission procedures and operational field training in the role as
+  Communication Information Specialist.
+}
+
+\normalsize\normalfont
 
 \SmallSep
 
 % -- Royal Marine -------------------------------------------------------------
 
-\CVItem{2009~-~2010, Marine Trainings Center}
+\CVItem{2009~-~2010, Royal Marine Training Center}
 {Marine First Class}
+\footnotesize\textit{\\
+  Received my blue beret after successfully completing the initial Royal marine
+  training program, which consists of courses about: weapon systems, amphibious
+  warfare, cloaking \& camouflage, medical intervention, sports, military
+  self-defence, advanced navigation and working with communication devices.
+}
+
+\normalsize\normalfont
+
+\SmallSep
+
+% -- Comenius College ---------------------------------------------------------
+
+\CVItem{2004~-~2008, Comenius College}
+{Highschool student}
+\footnotesize\textit{\\
+  Graduated with a HAVO (higher general continued education) economy and
+  society profile.
+}
+
+\normalsize\normalfont
 
 \SmallSep
 
@@ -119,77 +145,98 @@
 
 % -- Experience ---------------------------------------------------------------
 
-\ico{0.05}{work.png}~\CVSection{Experience}
+\ico{0.05}{work.png}~\CVSection{\raisebox{.2em}{Experience}}
 
 % -- Ivaldi -------------------------------------------------------------------
 
 \CVItem{May 2016 - 2017, \textit{Internship Software Engineer}, Ivaldi}
 {
-  Ivaldi is a small company founded by five student after they finished their
-  studies at the Delft University. The company specializes in web based
-  solutions and mobile app development. As a software engineer at Ivaldi, I was responsible for improving BRIMIR a
-  ticket system used internally by Ivaldi to handle their support.
+  Ivaldi is a small company founded by five former students after they finished
+  their studies at the Delft University. The company specializes in web based
+  solutions and mobile app development. As a software engineer at Ivaldi, I was
+  responsible for improving \href{https://getbrimir.com}{BRIMIR} a ticket
+  system used internally by Ivaldi to handle their support.
 
   \SmallSep
 
   \begin{itemize}
-    \item Successfully implemented the BRIMIR, which allows agents to automate
-      replies.
-    \item Successfully implemented the calendar system to BRIMIR, which allows
-      customers to schedule their working hours.
+    \item Successfully implemented the BRIMIR e-mail template system, which
+      allows agents to automate replies.
+    \item Responsible for successfully implementing a calendar system in
+      BRIMIR, which allows agents to schedule their working hours.
     \item Associated the BRIMIR calendar system and the BRIMIR notification
-      system, which successfully allowed agents to control when they want to
-      receive support e-mails.
-    \item Analysed a vulnerability bug that allowed bots to create infinitely
-      many tickets and in response delivered a solution by implementing a
-      CAPTCHA authentication.
+      system, which successfully allowed agents to control their support
+      e-mails.
+    \item Analysed and fixed a vulnerability bug that allowed bots to create
+      infinitely many tickets, which lead to less stress on the BRIMIR filter
+      system.
     \item Successfully implemented a regular expression parser for the e-mail
-      template system in BRIMIR to contain variables, which allows agents to
-      create more dynamic templates.
-    \item Accountable for implementing the status checking for tickets in
-      BRIMIR, which resulted in a better user experience.
+      template system in BRIMIR, which allows agents to create more generic
+      templates.
   \end{itemize}
 
-    \framebreak
-    \framebreak
+% -- End Page 1 ---------------------------------------------------------------
+
+  \clearpage
+
+  \framebreak
+  \framebreak
 
   \begin{itemize}
-    \item Successfully extended the BRIMIR e-mail filter with improved pattern
-      recognition capabilities, which resulted in less spam e-mails received by
-      customers.
-    \item Accountable for upgrading BRIMIR to Ruby on Rails 5, which allowed
-      it to support real-time communication.
-    \item Responsible for restructuring the Skillpower database to support more
-      languages, which resulted in more international attention CARE
+    \item Responsible for implementing the status checking for tickets in
+      BRIMIR, which resulted in a better user experience.
+    \item Delivered a working extension for the BRIMIR e-mail filter, which
+      improved pattern recognition capabilities that resulted in less spam
+      e-mails received by customers.
+    \item Performed the lift to  Ruby on Rails 5 for BRIMIR, which allowed it
+      to support real-time communication.
+    \item Completed the assignment for restructuring the
+      \href{https://skillpower.net}{Skillpower} database to support multiple
+      languages, which resulted in more international attention for CARE
       Netherlands.
   \end{itemize}
-
 }
 
 \SmallSep
 
 % -- Royal Marine -------------------------------------------------------------
 
-\CVItem{May 2009 - 2014, \textit{Royal Marine}, Royal Netherlands Navy}
+\CVItem{May 2009 - 2014, \textit{Royal Dutch Marine}, Ministry of Defence}
 {
-  Participated in international peacekeeping operations. Deployable all over
-  the world in forty-eight hours. To successfully complete these missions
-  skills obtained from mandatory trainings in the most varied circumstances and
-  a physical and mental stability were demanded.
+  As a Royal Dutch marine I was trained to be the best. Responsible for
+  maintaining the national and international peace and representing the Dutch
+  interest abroad. To accomplish this task I had to be an excellent team
+  player, sportsman and have at my disposal the dedication to push myself and
+  others to the limit everyday.
 
   \SmallSep
 
   \begin{itemize}
-    \item Trained to operate in any environment, under any condition and
-      circumstances.
-    \item Took part in several anti-piracy operations in the Gulf of Aden and
-      Somalia.
-    \item Took part in different trainings all around the globe.
-    \item Responsible real time commutation with HQ under any circumstances and
-      in any continent.
-    \item Responsible for encrypting and decrypting messages sent over safex,
-      HF, VHF or TCP/IP.
-
+    \item Acted as communication specialist as part of a vessel protection
+      detachment team, in which I was responsible for successfully maintaining
+      and providing communication with The Hague (Netherlands) by using
+      technologies like: message encryption with a SAFEX encryption device,
+      full-duplex communication through the use of Iridium satellite phones,
+      accessing the Inmarsat network using Thrane \& Thrane Sailor FBXXX
+      devices and Harris tactical HF radios, for which I received the medal
+      international missions for my outstanding services and performance.
+    \item Received the Royal marine winter distinction for successfully
+      completing the operational combat unit course in the arctic in sub-zero
+      temperatures going as far as $-40^\circ$C, which allows me to perform
+      operations and missions in the arctic.
+    \item Received the Royal marine mountain distinction for successfully
+      completing the operational combat unit course in the highlands of
+      Scotland, which allows me to perform missions and operations in hostile
+      rural and mountainous areas all around the globe.
+    \item Received the Parachute wing emblem for successfully completing the
+      operational combat parachute unit course in France and Czech, which
+      allows me to perform missions and operations by being deployed by use
+      of parachute.
+    \item Promoted to Communication Information specialist, by successfully
+      completing the Royal marine signaller combat unit course, which allows me
+      to perform missions and operations as the role of CIS (Communication
+      Information Specialist) in a combat unit and act as a instructor in
+      communication and information systems.
   \end{itemize}
 }
 
@@ -201,7 +248,7 @@
 
 % -- Software Development -----------------------------------------------------
 
-\ico{0.05}{lambda.png}~\CVSection{Software Development}
+\ico{0.05}{lambda.png}~\CVSection{\raisebox{.2em}{Software Development}}
 
 % -- Programming --------------------------------------------------------------
 
@@ -212,7 +259,7 @@
 {\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
   \bluebullet C\# & \bluebullet Shell & \bluebullet C \\
   \multicolumn{3}{l}{
-    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.65}
+    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.71}
     \hspace{2.7em}
     \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.8}
     \hspace{2.7em}
@@ -220,11 +267,17 @@
   } \\
   \bluebullet Haskell & \bluebullet F\# & \bluebullet Ruby \\
   \multicolumn{3}{l}{
-    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.7}
+    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.75}
     \hspace{2.7em}
-    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.68}
+    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.66}
     \hspace{2.7em}
     \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.78}
+  } \\
+  \bluebullet Rust & \bluebullet Java \\
+  \multicolumn{2}{l}{
+    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.75}
+    \hspace{2.7em}
+    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.66}
   }
 \end{tabular}
 }
@@ -244,43 +297,59 @@
     \hspace{2.7em}
     \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.4}
     \hspace{2.7em}
-    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.8}
+    \progressbar[width=3cm,ticksheight=0,filledcolor=RoyalBlue,emptycolor=white]{0.86}
   }
 \end{tabular}}
+
+% -- End Page 2 ---------------------------------------------------------------
+
+\clearpage
+
+\framebreak
+\framebreak
 
 % -- Separator ----------------------------------------------------------------
 
 \Sep
 
-% -- Languages ----------------------------------------------------------------
+% -- Communication ------------------------------------------------------------
 
-\ico{0.05}{communication.png}~\CVSection{Communication}
+\ico{0.05}{communication.png}~\CVSection{\raisebox{.2em}{Communication}}
+
+% -- Languages ----------------------------------------------------------------
 
 \CVItem{Languages}
 
 \SmallSep
 
-{\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
-  \bluebullet English    & Fluent \\
-  \bluebullet Dutch      & Native \\
-  \bluebullet Vietnamese & Basic  \\
+{\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
+  \bluebullet English    & Professional working proficiency \\
+  \bluebullet Dutch      & Native or bilingual proficiency  \\
+  \bluebullet Vietnamese & Elementary proficiency           \\
+  \bluebullet German     & Elementary proficiency           \\
+
+
 \end{tabular}}
 
 % -- Separator ----------------------------------------------------------------
 
 \Sep
 
-% -- Hobbies -----------------------------------------------------------------
+% -- Personal Interests -------------------------------------------------------
 
-\ico{0.05}{hobbies.png}~\CVSection{Hobbies}
+\ico{0.05}{hobbies.png}~\CVSection{\raisebox{.2em}{Personal Interests}}
 
-\CVItem{Hobbies}
+% -- Personal Interests -------------------------------------------------------
+
+\CVItem{Personal Interests}
 
 \SmallSep
 
-{\begin{tabular}{p{0.2\textwidth} p{0.2\textwidth} p{0.2\textwidth}}
- \bluebullet Kyokushin Karate & \bluebullet Mathemathics & \bluebullet Reading \\
- \bluebullet Movies & \bluebullet Running \\
+{\begin{tabular}{p{0.3\textwidth} p{0.3\textwidth} p{0.3\textwidth}}
+  \bluebullet Kyokushin Karate & \bluebullet Mathemathics           \\
+  \bluebullet Literature       & \bluebullet History                \\
+  \bluebullet Running          & \bluebullet Functional Programming \\
+  \bluebullet Board games      & \bluebullet People                 \\
 \end{tabular}}
 
 \end{document}

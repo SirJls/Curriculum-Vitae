@@ -11,7 +11,7 @@
 \usepackage{multicol}                                        % columns env.
   \setlength{\multicolsep}{0pt}
 \usepackage{enumitem}                                        % Modifying lists
-  \setlist{noitemsep,nolistsep} % Remove spacing within and around lists
+  \setlist{noitemsep,nolistsep}                              % Remove spacing within and around lists
 \usepackage{hyperref}                                        % URLs
   \hypersetup{
     colorlinks,
@@ -47,7 +47,7 @@
 \addtolength{\LeftMainSep}{1\columnsep}
 \newflowframe{0.7\textwidth}{\textheight}{\LeftMainSep}{0pt}
 
-% -- Misc ----------------------------------------------------------------
+% -- Misc ---------------------------------------------------------------------
 
 % Disable all page numbering
 \pagestyle{empty}
@@ -77,10 +77,10 @@
 % Parameter 1: None.
 \newcommand{\SmallSep}{\vspace{0.5em}}
 
-% About me section.
+% Personal statement section.
 % Parameter 1: Section name.
 % Parameter 2: Context.
-\newcommand{\aboutme}[2]{\textbf{\color{RoyalBlue}#1}\par#2\par\Sep}
+\newcommand{\statement}[2]{\textbf{\color{RoyalBlue}#1}\par#2\par\Sep}
 
 % Headings within sections.
 % Parameter 1: Section name.
