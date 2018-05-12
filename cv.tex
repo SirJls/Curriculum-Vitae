@@ -8,12 +8,15 @@
 \newcommand{\authoremail}{mail@sjorssparreboom.nl}
 \newcommand{\authorwebsite}{http://sjorssparreboom.nl}
 \newcommand{\authorbirthday}{17 November 1990}
+\newcommand{\authoraddressfirst}{Oudedijk 3A03,}
+\newcommand{\authoraddresssecond}{Rotterdam 3062 AA}
 \newcommand{\authormobilephone}{(+31) 641 77 44 22}
 \newcommand{\authorgpgkey}{0x36BEBC5B}
 \newcommand{\authorfingerprintone}{EEC1 9F10 7DD3 801B}
-{\newcommand{\authorfingerprinttwo}{D3ED 4231 9088 4F4B 36BE}
-{\newcommand{\authorfingerprintthree}{BC5B}
+\newcommand{\authorfingerprinttwo}{D3ED 4231 9088 4F4B}
+\newcommand{\authorfingerprintthree}{36BE BC5B}
 \newcommand{\authorgithub}{\href{http://github.com/SirJls}{http://github.com/SirJls}}
+\newcommand{\inden}{\quad$\>\>\>$}
 
 \newcommand{\ico}[2]{\includegraphics[width=#1\columnwidth]{./ico/#2}}
 \newcommand{\icon}[1]{\includegraphics[width=0.1\columnwidth]{./ico/#1}}
@@ -27,6 +30,8 @@
     \small
     \icon{user.png}~\raisebox{.2em}{\authorname}                      \\[.1cm]
     \icon{cake.png}~\raisebox{.2em}{\authorbirthday}                  \\[.1cm]
+    \icon{location.png}~\raisebox{.2em}{\authoraddressfirst}          \\[.1cm]
+    \inden\raisebox{.2em}{\authoraddresssecond}                       \\[.1cm]
     \icon{mail.png}~\raisebox{.2em}{\mailto{\authoremail}}            \\[.1cm]
     \icon{globe.png}~\raisebox{.2em}{\mailto{\authorwebsite}}         \\[.1cm]
     \icon{mobile.png}~\raisebox{.2em}{\authormobilephone}             \\[.1cm]
@@ -35,8 +40,8 @@
     \SmallSep
     \icon{gpg.png}~\raisebox{.2em}{\authorgpgkey}                     \\[.1cm]
     \icon{fingerprint.png}~\raisebox{.2em}{\authorfingerprintone}     \\[.1cm]
-    \raisebox{.2em}{\authorfingerprinttwo}                            \\[.1cm]
-    \raisebox{.2em}{\authorfingerprintthree}                          \\[.1cm]
+    \inden\raisebox{.2em}{\authorfingerprinttwo}                      \\[.1cm]
+    \inden\raisebox{.2em}{\authorfingerprintthree}                    \\[.1cm]
     % \icon{fingerprint.png}~\authorfingerprint                   \\[.1cm]
     \SmallSep
     \hline
